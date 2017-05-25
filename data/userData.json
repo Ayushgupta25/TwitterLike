@@ -1,0 +1,86 @@
+[{
+
+	"id" : "firstUser",
+	"name" : "First User",
+	"handleName" : "@firstUser",
+	"userImage" : "http://pbs.twimg.com/profile_images/570440108424171520/QuGYd7jH_normal.png",
+	"tweets" : [
+		{
+			"id" : "firstUser_tweet1",
+			"name" : "NDTV",
+			"text" : "This is a news alert. More details to follow.  #JustIn #NDTVNews https://t.co/fqgep3XyeX",
+			"profile_image" : "http://pbs.twimg.com/profile_images/570440108424171520/QuGYd7jH_normal.png"
+		},
+		{
+			"id" : "firstUser_tweet2",
+			"name" : "Hindustan Times",
+			"text" : "Armed men sighted in Kathua border area of Jammu and Kashmir, alert sounded https://t.co/nttesGGXdN https://t.co/oweMUdXY2T",
+			"profile_image" : "http://pbs.twimg.com/profile_images/857234039299743744/ulO3Fc1B_normal.jpg"
+		},
+		{
+			"id" : "firstUser_tweet3",
+			"name" : "Livemint",
+			"text" : "CBSE Class 12 results 2017 not before Friday, says spokesperson https://t.co/zeQsi0lRy5",
+			"profile_image" : "http://pbs.twimg.com/profile_images/786768566280458240/10bMmNvU_normal.jpg"
+		},
+		{
+			"id" : "firstUser_tweet4",
+			"name" : "ReadWrite",
+			"text" : "[TECH NEWS]  Using IoT to solve the problems of the freight industry https://t.co/S2Jp1YVVC5\n\n#Tech #News #IIoT https://t.co/ei5O8no8uD",
+			"profile_image" : "http://pbs.twimg.com/profile_images/806200860837449728/hBIS-Ct-_normal.jpg"
+		},
+		{
+			"id" : "firstUser_tweet5",
+			"name" : "Hindustan Times",
+			"text" : "One of India's largest media companies. Latest news from around the world. Retweets are not endorsements.",
+			"profile_image" : "http://pbs.twimg.com/profile_images/857234039299743744/ulO3Fc1B_normal.jpg"
+		},
+		{
+			"id" : "firstUser_tweet6",
+			"name" : "News18",
+			"text" : "Saharanpur outgoing DM Orders suspension of Mobile Internet and SMS in the region till further notice https://t.co/uHk0U46ORz",
+			"profile_image" : "http://pbs.twimg.com/profile_images/830049848460193792/yqexlRM2_normal.jpg"
+		}
+	]
+
+},
+{
+
+	"id" : "secondUser",
+	"name" : "Second User",
+	"handleName" : "@secondUser",
+	"userImage" : "http://pbs.twimg.com/profile_images/548508720888442881/T4tYT9xR_normal.jpeg",
+	"tweets" : [
+		{
+			"id" : "secondUser_tweet1",
+			"name" : "Hindustan Times",
+			"text" : "One of India's largest media companies. Latest news from around the world. Retweets are not endorsements.",
+			"profile_image" : "http://pbs.twimg.com/profile_images/857234039299743744/ulO3Fc1B_normal.jpg"
+		},
+		{
+			"id" : "secondUser_tweet2",
+			"name" : "News18",
+			"text" : "Saharanpur outgoing DM Orders suspension of Mobile Internet and SMS in the region till further notice https://t.co/uHk0U46ORz",
+			"profile_image" : "http://pbs.twimg.com/profile_images/830049848460193792/yqexlRM2_normal.jpg"
+		},
+		{
+			"id" : "secondUser_tweet3",
+			"name" : "TIMES NOW",
+			"text" : "I think after preliminary inquiry, FIR against Major Gogoi will be closed: GVL Narasimha Rao, BJP #MajorGogoiCleanChit",
+			"profile_image" : "http://pbs.twimg.com/profile_images/548508720888442881/T4tYT9xR_normal.jpeg"
+		},
+		{
+			"id" : "secondUser_tweet4",
+			"name" : "DNA",
+			"text" : "PCB, BCCI officials to meet in Dubai on May 29 https://t.co/LsDqCv2ngb https://t.co/6EqtRG3Hgo",
+			"profile_image" : "http://pbs.twimg.com/profile_images/864432203370905601/yWa-6Q9O_normal.jpg"
+		},
+		{
+			"id" : "secondUser_tweet5",
+			"name" : "NDTV",
+			"text" : "This is a news alert. More details to follow.  #JustIn #NDTVNews https://t.co/fqgep3XyeX",
+			"profile_image" : "http://pbs.twimg.com/profile_images/570440108424171520/QuGYd7jH_normal.png"
+		}
+	]
+
+}]

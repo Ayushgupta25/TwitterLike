@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="twitterApp">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Twitter Application</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+
+    <body>
+        <header>
+            Twitter Application
+        </header>
+
+        <div class="container" ng-controller="TwitterController">
+
+            <div class="userTab">
+                <button ng-class="{ active: isSet(1) }" class="tablinks leftTab" ng-click="setTab(1)">First User</button>
+                <button ng-class="{ active: isSet(2) }" class="tablinks rightTab" ng-click="setTab(2)">Second User</button>
+            </div>
+            <div>
+                    <div ng-repeat="user in users" ng-show="isSet($index+1)">
+                        <div class="userDetails">
+                             <div>
+                                <div class="profileImage"><img ng-src="{{user.userImage}}" class="img-circle"></div>
+                                <div class="profileName"><b>{{user.name}}</b><br><span style="color:#ccc;">{{user.handleName}}</span></div>
+                             </div>
+                             <div style="clear:both;">
+                                <textarea class="editableDiv" placeholder="Write something..." ng-model="user.newTweet"></textarea>
+                                <button class="tweetButton" ng-disabled="!(user.newTweet.length > 0)" ng-click="addTweet($index)">Tweet</button>
+                             </div>
+                         </div>
+
+                         <div class="userTweets" ng-repeat="tweet in user.tweets">
+                             <div class="tweetImage"><img ng-src="{{tweet.profile_image}}" class="img-circle"></div>
+                             <div class="tweetText">
+                                <b>{{tweet.name}}</b>
+                                <br><br>
+                                {{tweet.text}}<br><br>
+                                <div class="action"></div>
+                             </div>
+                         </div>
+                    </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="lib/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/controllers.js"></script>
+    <script src="js/services/services.js"></script>
+</html>
