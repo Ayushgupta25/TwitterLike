@@ -17,6 +17,8 @@ twitterApp.controller('TwitterController', function($scope, twitterService) {
 
     twitterService.getUserTweets().then(function(response){
         $scope.users = response;
+        $scope.user = $scope.users[0];
+        $scope.currentIndex = 0;
     },function(response){
         //
     });
@@ -26,15 +28,26 @@ twitterApp.controller('TwitterController', function($scope, twitterService) {
     */
     $scope.addTweet = function(index){
     	var localObj = {
-    		"id" :  $scope.users[index].id+"_tweet"+ $scope.users[index]["tweets"].length+1,
-			"name" :  $scope.users[index].name,
-			"text" :  $scope.users[index].newTweet,
-			"profile_image" :  $scope.users[index].userImage
+    		"id" :  $scope.user.id+"_tweet"+ $scope.user["tweets"].length+1,
+			"name" :  $scope.user.name,
+			"text" :  $scope.user.newTweet,
+			"profile_image" :  $scope.user.userImage
     	}
 
-    	 $scope.users[index]["tweets"].unshift(localObj);
+    	 $scope.user["tweets"].unshift(localObj);
 
-    	 $scope.users[index].newTweet = "";
+    	 $scope.user.newTweet = "";
 
+    }
+
+    $scope.changeUser = function(index){
+        if(index === 0){
+            $scope.user = $scope.users[1];
+            $scope.currentIndex = 1;
+        }
+        else{
+            $scope.user = $scope.users[0];
+            $scope.currentIndex = 0;
+        }
     }
 });

@@ -7,28 +7,61 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
 
-    <body>
+    <body  ng-controller="TwitterController">
         <header>
-            Twitter Application
         </header>
 
-        <div class="container" ng-controller="TwitterController">
+        <div class="coverPhoto">
+            <div class="coverPhotoDiv"><img ng-src="{{user.cover_small}}"></div>
+            <div class="coverPhotoDivBig">
+                <img ng-src="{{user.cover_big}}">
+            </div>
+            <div class="mainPhoto" style="background: url({{user.profile_image}}) no-repeat; background-size: contain;"></div>
+        </div>
 
-            <div class="userTab">
+        <div class="userFollowDetails">
+            
+
+        </div>
+
+
+        <div class="container">
+                
+                    <button class="otherUser" ng-click="changeUser(currentIndex)">Other User</button>
+                
+          <!--  <div class="userTab">
                 <button ng-class="{ active: isSet(1) }" class="tablinks leftTab" ng-click="setTab(1)">First User</button>
                 <button ng-class="{ active: isSet(2) }" class="tablinks rightTab" ng-click="setTab(2)">Second User</button>
-            </div>
-            <div>
-                    <div ng-repeat="user in users" ng-show="isSet($index+1)">
+            </div> -->
+         
                         <div class="userDetails">
                              <div>
-                                <div class="profileImage"><img ng-src="{{user.userImage}}" class="img-circle"></div>
-                                <div class="profileName"><b>{{user.name}}</b><br><span style="color:#ccc;">{{user.handleName}}</span></div>
+                                <div class="profileName"><b>{{user.name}}</b><img src="images/verified.png"><br>
+                                <span style="color: #657786;">{{user.handleName}}</span></div>
                              </div>
-                             <div style="clear:both;">
-                                <textarea class="editableDiv" placeholder="Write something..." ng-model="user.newTweet"></textarea>
+                             <div class="userDesc">
+                               <!-- <textarea class="editableDiv" placeholder="Write something..." ng-model="user.newTweet"></textarea>
+                                <button class="tweetButton" ng-disabled="!(user.newTweet.length > 0)" ng-click="addTweet($index)">Tweet</button> -->
+                                {{user.desc}}
+                             </div>
+                             <div class="otherDetails">
+                                 <span class="place">{{user.place}}</span>
+                                 <span>.</span>
+                                 <span class="url"><a href="{{user.url}}" target="_blank" />{{user.url}}</a></span>
+                                 <br><br>
+                                 <b>{{user.following}}</b>&nbsp;<span style="color:#657786;">FOLLOWING</span> &nbsp; <b>{{user.followers}}</b>&nbsp;<span style="color:#657786;">FOLLOWERS</span>
+                             </div>
+
+                            <div class="newTweet">
+                                <textarea class="editableDiv" placeholder="Write something..." ng-model="user.newTweet"></textarea><br>
                                 <button class="tweetButton" ng-disabled="!(user.newTweet.length > 0)" ng-click="addTweet($index)">Tweet</button>
-                             </div>
+                                </div>
+                         </div>
+
+                         <div class="userDetailsTab">
+                            <div class="tabSelected">TWEETS</div>
+                            <div>MEDIA</div>
+                            <div>LIKES</div>
                          </div>
 
                          <div class="userTweets" ng-repeat="tweet in user.tweets">
@@ -40,8 +73,8 @@
                                 <div class="action"></div>
                              </div>
                          </div>
-                    </div>
-            </div>
+                    
+            
         </div>
     </body>
 

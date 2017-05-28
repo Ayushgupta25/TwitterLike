@@ -1,9 +1,17 @@
 [{
 
 	"id" : "firstUser",
-	"name" : "First User",
-	"handleName" : "@firstUser",
+	"name" : "Times Now",
+	"handleName" : "@timesNow",
 	"userImage" : "http://pbs.twimg.com/profile_images/570440108424171520/QuGYd7jH_normal.png",
+	"desc" : "Times Now is India’s most watched English news channel. Follow us for breaking news & updates.",
+	"url" : "http://www.timesnow.tv/",
+	"profile_image" : "images/firstUser.jpg",
+	"cover_small" : "images/firstUser_600x200.jpg",
+	"cover_big" : "images/firstUser_1500x500.jpg",
+	"followers" : "7,501,675",
+	"following" : "291",
+	"place" : "India",
 	"tweets" : [
 		{
 			"id" : "firstUser_tweet1",
@@ -47,9 +55,17 @@
 {
 
 	"id" : "secondUser",
-	"name" : "Second User",
-	"handleName" : "@secondUser",
+	"name" : "ANI",
+	"handleName" : "@ani",
 	"userImage" : "http://pbs.twimg.com/profile_images/548508720888442881/T4tYT9xR_normal.jpeg",
+	"desc" : "Asian News International.Multi-media news agency,content for information platforms: TV, Internet, broadband, newspapers, mobiles .",
+	"url" : "http://www.aninews.in/",
+	"profile_image" : "images/secondUser.jpg",
+	"cover_small" : "images/secondUser_600x200.jpg",
+	"cover_big" : "images/secondUser_1500x500.jpg",
+	"followers" : "1,978,544",
+	"following" : "11",
+	"place" : "India",
 	"tweets" : [
 		{
 			"id" : "secondUser_tweet1",
